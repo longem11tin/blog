@@ -2,7 +2,7 @@ var express = require('express')
 var fs = require('fs')
 var morgan = require('morgan')
 var path = require('path')
-const port = 4000
+const port = 3000
 
 var app = express()
 
@@ -12,7 +12,11 @@ var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), {
 // setup the logger
 app.use(morgan('combined', { stream: accessLogStream }))
 
-app.get('/tin-tuc', function (req, res) {
+app.get('/', function (req, res) {
+    res.send('hello, world!')
+})
+
+app.get('/trangchu', function (req, res) {
     res.send('hello, world!')
 })
 
