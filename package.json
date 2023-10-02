@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/longem11tin/blog#readme",
   "devDependencies": {
+    "express-handlebars": "^7.1.2",
     "fs": "^0.0.1-security",
     "nodemon": "^3.0.1",
     "npm": "^10.1.0",
